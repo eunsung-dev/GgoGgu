@@ -1,0 +1,24 @@
+PODS:
+  - NMapsGeometry (1.0.1)
+  - NMapsMap (3.16.2):
+    - NMapsGeometry
+  - SwiftSoup (2.5.3)
+
+DEPENDENCIES:
+  - NMapsMap
+  - SwiftSoup
+
+SPEC REPOS:
+  trunk:
+    - NMapsGeometry
+    - NMapsMap
+    - SwiftSoup
+
+SPEC CHECKSUMS:
+  NMapsGeometry: 53c573ead66466681cf123f99f698dc8071a4b83
+  NMapsMap: aaa64717249b06ae82c3a3addb3a01f0e33100ab
+  SwiftSoup: 33e8d374021a6c332788f78fa29a93227d8a7699
+
+PODFILE CHECKSUM: 8c3e9b87d7c5542129bf810ef3eb6d6a44d87ac2
+
+COCOAPODS: 1.14.3

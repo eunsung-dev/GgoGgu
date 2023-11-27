@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1599EA5965B7ED4F31098DF8 /* Pods_GgoGgu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51514AB46FD18BE2566133A /* Pods_GgoGgu.framework */; };
+		91A065A72B14ECF700A83DB0 /* Crawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A065A62B14ECF700A83DB0 /* Crawler.swift */; };
 		91ABF4872B0CDC510023B5D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ABF4862B0CDC510023B5D3 /* AppDelegate.swift */; };
 		91ABF4892B0CDC510023B5D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ABF4882B0CDC510023B5D3 /* SceneDelegate.swift */; };
 		91ABF48B2B0CDC510023B5D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ABF48A2B0CDC510023B5D3 /* ViewController.swift */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FE975C045D8ACDE357EE9AD /* Pods-GgoGgu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GgoGgu.release.xcconfig"; path = "Target Support Files/Pods-GgoGgu/Pods-GgoGgu.release.xcconfig"; sourceTree = "<group>"; };
+		58C98806C5EC08B286C2340D /* Pods-GgoGgu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GgoGgu.debug.xcconfig"; path = "Target Support Files/Pods-GgoGgu/Pods-GgoGgu.debug.xcconfig"; sourceTree = "<group>"; };
+		91A065A62B14ECF700A83DB0 /* Crawler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crawler.swift; sourceTree = "<group>"; };
 		91ABF4832B0CDC510023B5D3 /* GgoGgu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GgoGgu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91ABF4862B0CDC510023B5D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91ABF4882B0CDC510023B5D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		91ABF48F2B0CDC520023B5D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91ABF4922B0CDC520023B5D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91ABF4942B0CDC520023B5D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51514AB46FD18BE2566133A /* Pods_GgoGgu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GgoGgu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1599EA5965B7ED4F31098DF8 /* Pods_GgoGgu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DBA51064C283484A2A95CFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B51514AB46FD18BE2566133A /* Pods_GgoGgu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D416F5F556FC5F64F2B4EFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58C98806C5EC08B286C2340D /* Pods-GgoGgu.debug.xcconfig */,
+				4FE975C045D8ACDE357EE9AD /* Pods-GgoGgu.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		91A065A32B14EC6600A83DB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91A065A62B14ECF700A83DB0 /* Crawler.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91A065A42B14EC6C00A83DB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91ABF48A2B0CDC510023B5D3 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91A065A52B14EC7800A83DB0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		91ABF47A2B0CDC510023B5D3 = {
 			isa = PBXGroup;
 			children = (
 				91ABF4852B0CDC510023B5D3 /* GgoGgu */,
 				91ABF4842B0CDC510023B5D3 /* Products */,
+				3D416F5F556FC5F64F2B4EFC /* Pods */,
+				0DBA51064C283484A2A95CFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +105,11 @@
 		91ABF4852B0CDC510023B5D3 /* GgoGgu */ = {
 			isa = PBXGroup;
 			children = (
+				91A065A52B14EC7800A83DB0 /* Presenter */,
+				91A065A42B14EC6C00A83DB0 /* View */,
+				91A065A32B14EC6600A83DB0 /* Model */,
 				91ABF4862B0CDC510023B5D3 /* AppDelegate.swift */,
 				91ABF4882B0CDC510023B5D3 /* SceneDelegate.swift */,
-				91ABF48A2B0CDC510023B5D3 /* ViewController.swift */,
 				91ABF48C2B0CDC510023B5D3 /* Main.storyboard */,
 				91ABF48F2B0CDC520023B5D3 /* Assets.xcassets */,
 				91ABF4912B0CDC520023B5D3 /* LaunchScreen.storyboard */,
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91ABF4972B0CDC520023B5D3 /* Build configuration list for PBXNativeTarget "GgoGgu" */;
 			buildPhases = (
+				11B80EA026A93A8703C199CB /* [CP] Check Pods Manifest.lock */,
 				91ABF47F2B0CDC510023B5D3 /* Sources */,
 				91ABF4802B0CDC510023B5D3 /* Frameworks */,
 				91ABF4812B0CDC510023B5D3 /* Resources */,
+				3DACD971F5800914196EBE79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +186,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11B80EA026A93A8703C199CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GgoGgu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DACD971F5800914196EBE79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GgoGgu/Pods-GgoGgu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GgoGgu/Pods-GgoGgu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GgoGgu/Pods-GgoGgu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		91ABF47F2B0CDC510023B5D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A065A72B14ECF700A83DB0 /* Crawler.swift in Sources */,
 				91ABF48B2B0CDC510023B5D3 /* ViewController.swift in Sources */,
 				91ABF4872B0CDC510023B5D3 /* AppDelegate.swift in Sources */,
 				91ABF4892B0CDC510023B5D3 /* SceneDelegate.swift in Sources */,
@@ -282,6 +378,7 @@
 		};
 		91ABF4982B0CDC520023B5D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58C98806C5EC08B286C2340D /* Pods-GgoGgu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +407,7 @@
 		};
 		91ABF4992B0CDC520023B5D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE975C045D8ACDE357EE9AD /* Pods-GgoGgu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
